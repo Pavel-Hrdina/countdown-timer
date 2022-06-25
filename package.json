@@ -1,5 +1,5 @@
 {
-  "name": "gaming-pauze-timer",
+  "name": "gaming-pause-timer",
   "version": "0.0.0",
   "scripts": {
     "build": "vite build",
