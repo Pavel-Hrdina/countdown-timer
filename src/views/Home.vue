@@ -18,7 +18,7 @@ components: {
           prevent bad posture or pain.
         </p>
         <button class="btn btn-primary leading-relaxed">
-          <a href="/timer">Start the clock</a>
+          <router-link to="/timer">Start the clock</router-link>
         </button>
       </div>
     </div>

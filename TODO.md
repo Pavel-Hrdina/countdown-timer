@@ -17,6 +17,8 @@ task yet to be done
 - [ ] Put the application online
   - [ ] Chose how and where
 - [ ] Better SEO
+  - [x] robots.txt
+  - [x] meta description
 
 ## URGENT
 

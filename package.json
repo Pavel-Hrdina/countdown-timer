@@ -1,7 +1,7 @@
 {
   "name": "gaming-pause-timer",
   "version": "0.0.0",
-  "description": "A timer for gamers. ",
+  "description": "A timer for gamers.",
   "license": "Apache License 2.0",
   "private": false,
   "keywords": [
