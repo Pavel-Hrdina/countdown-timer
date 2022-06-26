@@ -4,8 +4,8 @@
       <a class="btn btn-ghost normal-case text-xl">Pause timer</a>
     </div>
     <div class="flex-none mr-5">
-      <button class="btn btn-square btn-ghost">
-        <router-link to="/">
+      <button class="btn btn-square btn-ghost" aria-label="Home">
+        <router-link to="/" aria-label="Home">
           <svg style="width: 24px; height: 24px" viewBox="0 0 24 24">
             <path
               fill="currentColor"

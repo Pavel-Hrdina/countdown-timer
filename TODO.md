@@ -16,9 +16,10 @@ task yet to be done
   - [ ] Chose a file structure system
 - [ ] Put the application online
   - [ ] Chose how and where
-- [ ] Better SEO
+- [x] Better SEO
   - [x] robots.txt
   - [x] meta description
+  - [x] aria-label to buttons and anchors
 
 ## URGENT
 
