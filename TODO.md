@@ -11,7 +11,7 @@ task yet to be done
 - [ ] Document the code
   - [ ] Make it easier to read
   - [ ] Name function better
-  - [ ] Hive components better names
+  - [ ] Give components better names
 - [ ] Change the file structure to something more conventional
   - [ ] Chose a file structure system
 - [ ] Put the application online
