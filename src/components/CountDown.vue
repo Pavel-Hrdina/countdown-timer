@@ -62,18 +62,18 @@ export default {
 </script>
 
 <template>
-  <article class="prose w-56 p-5 bg-slate-700 flex justify-center">
+  <article class="prose w-56 p-5 bg-slate-700 flex justify-center m-0">
     <h2 v-if="totalSeconds <= 900 && this.isBreak === true">
       {{ description }}
     </h2>
-    <h2 v-else-if="this.isBreak === false">Work</h2>
+    <h2 v-else-if="this.isBreak === false">Play</h2>
     <h2 v-else>Something went wrong</h2>
   </article>
-  <div class="bg-slate-800 p-3">
+  <div class="bg-slate-800 p-3 m-0">
     <span class="font-mono text-6xl p-6">
       <div
         class="tooltip"
-        data-tip="Play for this long and that take a break for as long as you need to"
+        data-tip="Play for this long and that take a break 15 minute break"
       >
         <span class="m-5"> {{ displayMinutes }}:{{ displaySeconds }}</span>
       </div>
