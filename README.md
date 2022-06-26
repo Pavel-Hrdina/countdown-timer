@@ -14,4 +14,4 @@ vite v2.9.12 dev server running at:
 > Local: http://localhost:3000/
 ```
 
-Now you are running the app at
+Now you are running the app at http://localhost:3000/

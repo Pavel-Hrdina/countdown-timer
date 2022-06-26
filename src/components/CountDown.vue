@@ -54,7 +54,7 @@ export default {
     },
     changeToBreak() {
       this.totalSeconds = 15 * 60;
-      this.description = "Break";
+      this.description = "Take a break";
       this.isBreak = true;
     },
   },
