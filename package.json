@@ -1,6 +1,19 @@
 {
   "name": "gaming-pause-timer",
   "version": "0.0.0",
+  "description": "A timer for gamers. ",
+  "license": "Apache License 2.0",
+  "private": false,
+  "keywords": [
+    "timer "
+  ],
+  "repository": {
+    "type": " countdown-timer",
+    "url": "https://github.com/Pavel-Hrdina/countdown-timer.git"
+  },
+  "author": {
+    "name": "Pavel Hrdina"
+  },
   "scripts": {
     "build": "vite build",
     "dev": "vite",
@@ -20,6 +33,5 @@
     "@vue/cli-plugin-router": "~5.0.0",
     "vite": "^2.9.12",
     "vue-cli-plugin-tailwind": "~3.0.0"
-  },
-  "license": "Apache License 2.0"
+  }
 }
