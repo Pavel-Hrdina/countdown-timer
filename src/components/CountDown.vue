@@ -33,6 +33,7 @@ export default {
       this.stop();
       this.isRunning = true;
       this.timerInstance = setInterval(() => {
+        if (this.totalSeconds === 1) this.stop();
         this.totalSeconds -= 1;
       }, 1000);
     },

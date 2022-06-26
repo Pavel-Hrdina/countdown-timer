@@ -5,7 +5,7 @@
 task yet to be done
 
 - [ ] Make timer stop when it reaches zero
-  - [ ] Make it so that the timer does not go bellow zero
+  - [x] Make it so that the timer does not go bellow zero
   - [ ] Change the timer to 15:00 and add pause text bellow
   - [ ] When the pause is done change it back
 - [ ] Document the code
