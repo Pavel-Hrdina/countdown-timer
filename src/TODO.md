@@ -13,6 +13,7 @@ task yet to be done
 - [] Put the application online
   - [] Chose how and where
 - [] Make a sound when timer reaches 0
+- [] Make it so the user has options to change the page contents
 
 ## URGENT
 
