@@ -4,10 +4,6 @@
 
 task yet to be done
 
-- [] Make timer stop when it reaches zero
-  - [] Make it so that the timer does not go bellow zero
-  - [] Change the timer to 15:00 and add pause text bellow
-  - [] When the pause is done change it back
 - [] Document the code
   - [] Make it easier to read
   - [] Name function better
@@ -23,4 +19,11 @@ task yet to be done
 
 ## DONE
 
-...
+- [x] Make timer stop when it reaches zero
+  - [x] Make it so that the timer does not go bellow zero
+  - [x] Change the timer to 15:00 and add pause, text bellow
+  - [x] When the pause is done change it back
+- [x] Better SEO
+  - [x] robots.txt
+  - [x] meta description
+  - [x] aria-label to buttons and anchors

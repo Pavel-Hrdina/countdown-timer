@@ -1,7 +1,11 @@
 <template>
   <div class="navbar bg-base-200">
     <div class="flex-1">
-      <a class="btn btn-ghost normal-case text-xl">Pause timer</a>
+      <router-link to="/" aria-label="Home">
+        <a href="/" aria-label="Home" class="btn btn-ghost normal-case text-xl">
+          Pause timer
+        </a>
+      </router-link>
     </div>
     <div class="flex-none mr-5">
       <button class="btn btn-square btn-ghost" aria-label="Home">
