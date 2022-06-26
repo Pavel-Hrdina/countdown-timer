@@ -12,6 +12,7 @@ task yet to be done
   - [] Chose a file structure system
 - [] Put the application online
   - [] Chose how and where
+- [] Make a sound when timer reaches 0
 
 ## URGENT
 
