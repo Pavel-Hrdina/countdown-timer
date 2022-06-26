@@ -9,9 +9,10 @@ export default {
       },
       isTrues: false,
       isRunning: false,
+      isBreak: false,
       timerInstance: null,
       totalSeconds: 45 * 60,
-      timerType: 0,
+      description: null,
     };
   },
   computed: {
@@ -33,7 +34,11 @@ export default {
       this.stop();
       this.isRunning = true;
       this.timerInstance = setInterval(() => {
-        if (this.totalSeconds === 1) this.stop();
+        if (this.totalSeconds === 0 && this.isBreak === true) {
+          return this.reset();
+        }
+
+        if (this.totalSeconds === 0) return this.stop(), this.changeToBreak();
         this.totalSeconds -= 1;
       }, 1000);
     },
@@ -44,24 +49,42 @@ export default {
     reset() {
       this.stop();
       this.totalSeconds = 45 * 60;
+      this.description = "Work";
+      this.isBreak = false;
+    },
+    changeToBreak() {
+      this.totalSeconds = 15 * 60;
+      this.description = "Break";
+      this.isBreak = true;
     },
   },
 };
 </script>
 
 <template>
-  <span class="font-mono text-6xl p-6">
-    <div
-      class="tooltip"
-      data-tip="Play for this long and that take a break for as long as you need to"
-    >
-      <span class="m-5"> {{ displayMinutes }}:{{ displaySeconds }}</span>
+  <article class="prose w-56 p-5 bg-slate-700 flex justify-center">
+    <h2 v-if="totalSeconds <= 900 && this.isBreak === true">
+      {{ description }}
+    </h2>
+    <h2 v-else-if="this.isBreak === false">Work</h2>
+    <h2 v-else>Something went wrong</h2>
+  </article>
+  <div class="bg-slate-800 p-3">
+    <span class="font-mono text-6xl p-6">
+      <div
+        class="tooltip"
+        data-tip="Play for this long and that take a break for as long as you need to"
+      >
+        <span class="m-5"> {{ displayMinutes }}:{{ displaySeconds }}</span>
+      </div>
+    </span>
+    <div class="flex flex-row">
+      <button class="btn btn-primary m-2" @click="start">Start</button>
+      <button class="btn btn-secondary m-2" @click="stop">Stop</button>
+      <button class="btn m-2" @click="reset" :disabled="isRunning">
+        Reset
+      </button>
     </div>
-  </span>
-  <div class="flex flex-row">
-    <button class="btn btn-primary m-2" @click="start">Start</button>
-    <button class="btn btn-secondary m-2" @click="stop">Stop</button>
-    <button class="btn m-2" @click="reset" :disabled="isRunning">Reset</button>
   </div>
 </template>
 
