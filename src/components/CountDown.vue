@@ -12,7 +12,6 @@ export default {
       timerInstance: null,
       totalSeconds: 45 * 60,
       timerType: 0,
-      tabTitles: ["Pomodoro", "Short Break", "Long Break"],
     };
   },
   computed: {
