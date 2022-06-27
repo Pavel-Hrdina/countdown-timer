@@ -10,7 +10,8 @@ task yet to be done
   - [ ] Give components better names
 - [ ] Change the file structure to something more conventional
   - [ ] Chose a file structure system
-  - [ ] fragment components
+  - [ ] Fragment components
+- [ ] Add more options for the user
 
 ## URGENT
 
