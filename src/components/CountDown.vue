@@ -1,4 +1,6 @@
 <script>
+import Bell from "../assets/bell-counter-a.mp3";
+
 export default {
   data() {
     return {
@@ -7,12 +9,17 @@ export default {
         second: "00",
         minutes: "00",
       },
+      sounds: {
+        title: "Bell",
+        author: `Bell, Counter, A.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org`,
+      },
       isTrues: false,
       isRunning: false,
       isBreak: false,
       timerInstance: null,
       totalSeconds: 45 * 60,
       description: null,
+      bell: new Audio(Bell),
     };
   },
   computed: {
@@ -48,14 +55,16 @@ export default {
     },
     reset() {
       this.stop();
-      this.totalSeconds = 45 * 60;
       this.description = "Work";
+      if (this.isBreak === true && this.totalSeconds === 0) this.bell.play();
       this.isBreak = false;
+      this.totalSeconds = 45 * 60;
     },
     changeToBreak() {
       this.totalSeconds = 15 * 60;
       this.description = "Take a break";
       this.isBreak = true;
+      if (this.isBreak === true) this.bell.play();
     },
   },
 };
